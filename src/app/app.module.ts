@@ -7,6 +7,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SubnavComponent } from './subnav/subnav.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
+import { AdBlocksComponent } from './ad-blocks/ad-blocks.component';
+import { FeaturedCarouselComponent } from './featured-carousel/featured-carousel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HeroBannerComponent } from './hero-banner/hero-banner.component';
     NavbarComponent,
     SubnavComponent,
     BreadcrumbComponent,
-    HeroBannerComponent
+    HeroBannerComponent,
+    AdBlocksComponent,
+    FeaturedCarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,28 @@
+app-navbar {
+    .navbar {
+        max-width: 1370px;
+    }
+}
+
+app-hero-banner {
+    display: block;
+    width: 100%;
+    max-height: 550px;
+    height: auto;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+app-ad-blocks, app-featured-carousel {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    app-hero-banner {
+        overflow: visible;
+    }
+
+    app-featured-carousel {
+        width: 90%;
+    }
+}

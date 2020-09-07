@@ -1,0 +1,21 @@
+.secondary-navigation-container {
+    .navbar {
+        padding: 0;
+        height: 50px;
+        background: #43484b;
+        margin-top: 60px;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    text-transform: uppercase;
+                    font-size: 11pt;
+                    padding: 0;
+                    margin-right: 24px;
+                    &:hover {
+                        border-bottom: 1px solid #ffb973;
+                    }
+                }
+            }
+        }
+    }
+}

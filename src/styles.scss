@@ -1,12 +1,50 @@
 :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
     color: #333;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
+  @font-face {
+    font-family: RobotoReg;
+    src: url('assets/font/RobotoCondensed-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: RobotoBold;
+    src: url('assets/font/RobotoCondensed-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: goodNews;
+    src: url('assets/font/Good-News.woff2') format('woff');
+  }
+
+  @font-face {
+    font-family: goodRegular;
+    src: url('assets/font/Good-Regular.woff2') format('woff');
+  }
+
+  @font-face {
+    font-family: goodBold;
+    src: url('assets/font/Good-Bold.woff2') format('woff');
+  }
+
+  @font-face {
+    font-family: goodProBook;
+    src: url('assets/font/GoodPro-Book.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: goodProLight;
+    src: url('assets/font/GoodPro-Light.otf') format('opentype');
+  }
+  
+  body {
+    font-family: 'goodRegular', 'arial', sans-serif !important;
+    font-size: 11pt !important;
+  }
+  
   h1,
   h2,
   h3,
@@ -16,10 +54,20 @@
     margin: 8px 0;
   }
 
-  p {
-    margin: 0;
+  h1 {
+    font-size: 18pt !important;
+    font-family: 'goodBold', 'arial', sans-serif;
   }
 
+  h4 {
+    font-size: 14pt !important;
+  }
+
+  p {
+    font-family: 'goodRegular', 'arial', sans-serif !important;
+    font-size: 11pt;
+  }
+  
   .spacer {
     flex: 1;
   }
@@ -50,13 +98,16 @@
     opacity: 0.8;
   }
 
+  .container {
+    max-width: 1250px !important;
+  }
+  
   .content {
     display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
+    max-width: 1250px;
     flex-direction: column;
     align-items: center;
+    margin-top: 207px;
   }
 
   svg.material-icons {
@@ -256,6 +307,19 @@
     width: 1920px;
   }
 
+  @media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: block !important;
+    }
+
+    .content {
+      margin-top: 60px;
+    }
+  }
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {

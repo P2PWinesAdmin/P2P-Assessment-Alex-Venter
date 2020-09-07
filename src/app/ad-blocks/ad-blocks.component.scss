@@ -1,0 +1,48 @@
+.ad-block-container {
+    margin-top: 40px;
+    .card {
+        height: auto;
+        width: auto;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        flex-direction: row;
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+            .card-body {
+                margin: auto;
+                .card-title {
+                    margin: 0;
+                }
+                .card-text {
+                    a {
+                        color: #b98754;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90% !important;
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-square-wrapper {
+        display: block;
+        width: 105px;
+        height: 115px;
+        img {
+            height: 100%;
+        }
+    }
+    .ad-block-col {
+        padding: 0 !important;
+    }
+}

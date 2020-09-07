@@ -1,8 +1,105 @@
-.carousel-inner {
-    .carousel-item {
-        img {
-        min-height: 359px;
-        height: auto;
+.carousel {
+    .carousel-indicators {
+        margin-right: 0;
+        margin-left: 33.5%;
+        li {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
         }
+    }
+    .carousel-inner {
+        .carousel-item {
+            height: 355px;
+            .banner-text-container {
+                width: 33.5%;
+                height: 355px;
+                display: inline-block;
+                border: 1px solid #ececec;
+                padding: 65px;
+                padding-bottom: 0;
+                vertical-align: top;
+                h1 {
+                    margin-bottom: 25px;
+                }
+                p {
+                    font-size: 10pt;
+                }
+            }
+            .author {
+                color: #818181;
+            }
+            .btn {
+                border-radius: 0px;
+                text-transform: uppercase;
+            }    
+            .btn-outline-primary {
+                color: #b98754;
+                border-color: #b98754;
+                &:hover {
+                    color: #b98754;
+                    border-color: #b98754;
+                    background-color: #fff;
+                }
+                &:active {
+                    color: #b98754;
+                    border-color: #b98754;
+                    background-color: #fff;
+                }
+                &:active {
+                    box-shadow: none;
+                }
+            }
+            img {
+                height: auto;
+                max-width: 66.5%;
+                width: 100%;
+                display: inline-block;
+                vertical-align: top
+            }
+        }
+    }
+}
+
+.carousel-img-mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        height: 560px !important;
+        .banner-text-container {
+            width: 90% !important;
+            height: auto !important;
+            display: inline-block !important;
+            border: 1px solid #ececec !important;
+            padding: 40px !important;
+            padding-bottom: 40px !important;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            margin: 0 auto;
+            z-index: 111;
+            background: #fff;
+        }
+        img {
+            max-width: 100% !important;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-text-container {
+        top: 230px;
+    }
+    .carousel-img-mobile {
+        display: block !important;
+    }
+    .carousel-img-desktop {
+        display: none !important;
     }
 }
